@@ -1,0 +1,21 @@
+name: Tracker
+version: ${project.version}
+main: dev.flrp.tracker.Tracker
+api-version: 1.13
+softdepend: [ WildStacker, StackMob, UltimateStacker, RoseStacker ]
+authors: [ flrp ]
+commands:
+  tracker:
+    description: Brings up a help menu.
+    default: true
+    usage: /tracker
+permissions:
+  tracker.admin:
+    description: Gives player access to admin commands.
+    default: op
+  tracker.progress:
+    description: Shows the progress of a tool.
+    default: op
+  tracker.milestones:
+    description: Shows the milestones of a tool.
+    default: op

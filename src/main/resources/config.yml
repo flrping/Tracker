@@ -1,0 +1,85 @@
+# What stacker should the plugin look for?
+# Current list: NONE, WILDSTACKER, STACKMOB
+stacker: NONE
+
+# Everything dealing with the counter process.
+counter:
+  # The tag that will appear on the items display.
+  tag: "&8[&7%stats%&8]"
+
+  # Enable formatting the counter tag? Ex. 1234 will turn into 1.23k
+  format:
+    enabled: false
+
+  # Sounds that will play on mine or kill.
+  sounds:
+    enabled: true
+    sound: BLOCK_NOTE_BLOCK_BELL
+
+  # Are milestones enabled?
+  milestones:
+    enabled: true
+
+# List of tools that will be applied to either block breaking or killing an entity.
+# Adding an item in both lists will share the counter tag.
+stats:
+  # Is block tracking enabled?
+  blocks:
+    enabled: true
+    list:
+      - WOODEN_PICKAXE
+      - WOODEN_AXE
+      - WOODEN_SHOVEL
+      - STONE_PICKAXE
+      - STONE_AXE
+      - STONE_SHOVEL
+      - IRON_PICKAXE
+      - IRON_AXE
+      - IRON_SHOVEL
+      - GOLDEN_PICKAXE
+      - GOLDEN_AXE
+      - GOLDEN_SHOVEL
+      - DIAMOND_PICKAXE
+      - DIAMOND_AXE
+      - DIAMOND_SHOVEL
+      - NETHERITE_PICKAXE
+      - NETHERITE_AXE
+      - NETHERITE_SHOVEL
+
+  kills:
+    # Is kill tracking enabled?
+    enabled: true
+    list:
+      - WOODEN_SWORD
+      - STONE_SWORD
+      - IRON_SWORD
+      - GOLDEN_SWORD
+      - DIAMOND_SWORD
+      - NETHERITE_SWORD
+
+# This module allows your players to get a tracker enchantment book; which
+# can be applied to allow tracking on the item.
+# NOTE: Enabling this module will only track tools that have the module.
+module:
+  # Is this module enabled?
+  enabled: false
+
+  # Sounds related to module events.
+  sounds:
+    enabled: true
+    receive: BLOCK_NOTE_BLOCK_BELL
+    fail: BLOCK_ANVIL_LAND
+    success: BLOCK_NOTE_BLOCK_BELL
+
+  # This section represents the enchantment item.
+  item:
+    material: NETHER_STAR
+    title: "&a&lTracker Module"
+    lore:
+      - "&7Add an objective tracker on your tool."
+
+# This section is for limiting he max value an enchant can be upgraded to.
+# Remember to use the proper names for the minecraft version.
+limits:
+  enchantments:
+    - looting:10

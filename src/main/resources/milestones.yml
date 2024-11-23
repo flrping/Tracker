@@ -1,0 +1,45 @@
+# Tool type examples: ALL (For all tools), EVERY_PICKAXE (Only Pickaxes), DIAMOND_PICKAXE (Only this tool)
+# Specifying a type other than ALL will bypass it.
+# Priorities Example (Highest to Lowest) : DIAMOND_PICKAXE -> EVERY_PICKAXE -> ALL
+# Head over to https://wiki.flrp.dev/ to see more info.
+milestones:
+  DIAMOND_PICKAXE:
+    # Happens only when x amount of blocks is reached.
+    once:
+      # The amount of blocks
+      1000:
+        # Console Commands that will run.
+        commands:
+          - "eco give %player% 1000"
+        # The enchants that will be added or buffed.
+        enchants:
+          - efficiency:1
+      10000:
+        # You can leave options out if you want.
+        enchants:
+          - efficiency:2
+    # Happens every x amount of blocks.
+    interval:
+      5000:
+        commands:
+          - "eco give %player% 1000"
+        enchants:
+          - efficiency:1
+  EVERY_SWORD:
+    once:
+      1000:
+        commands:
+          - "eco give %player% 1000"
+        enchants:
+          - sharpness:1
+          - unbreaking:1
+  EVERY_AXE:
+    interval:
+      1000:
+        commands:
+          - "eco give %player% 1000"
+  ALL:
+    interval:
+      1000:
+        enchants:
+          - unbreaking:1

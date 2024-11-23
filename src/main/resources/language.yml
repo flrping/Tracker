@@ -1,0 +1,41 @@
+# Head over to https://wiki.flrp.dev/ and see what the values print.
+prefix: "&8[&cTracker&8] "
+tool_not_supported: "&cThis item can't be used for tracking."
+# Boolean values if reached or not.
+milestone-not-reached: "&c&lNOT REACHED"
+milestone-reached: "&a&lREACHED"
+# 0 - Prints amount needed
+# 1 - Type of unit (kills or blocks)
+current-milestone: "&7The current milestone for this tool is &f{0} &7{1}."
+no-milestones-left: "&7This tool has reached all it's milestones."
+no-milestones-exist-total: "&cThis tool doesn't have any milestones it can achieve for it's total amount."
+no-milestones-exist: "&cThis tool doesn't have any milestones it can achieve."
+# 0 - Prints amount needed
+# 1 - Type of unit (kills or blocks)
+# 2 - REACHED or NOT REACHED
+milestone-once-header: "&cOnce"
+milestone-once-entry: "&8- &7Reach a total of &f{0} &7{1} &8|&r {2}"
+milestone-interval-header: "&cRepeating"
+milestone-interval-entry: "&8- &7Every &f{0} &7{1}"
+# 0 - prints entry
+milestone-list:
+  - "&c&lMILESTONES"
+  - "&7The current milestones for this tool are:"
+  - "&7"
+  - "{0}"
+# 0 - prints the milestone amount
+# 1 - Type of unit (kills or blocks)
+milestone-achieved-once: "&7You reached &f{0} &7{1}! Here are some rewards for reaching this milestone."
+milestone-achieved-interval: "&7You hit another &f{0} &7{1}! Here are some rewards for reaching this milestone."
+# 0 - prints level
+# 1 - prints enchant
+milestone-reward-entry: " &c+{0} &l{1}"
+# 0 - prints the list of enchants applied
+milestone-reward-list:
+  - "&7Your tool has received the following:"
+  - "{0}"
+  - "&7"
+module-give-player: "&7You successfully gave &f{0} &7a Tracker Module."
+module-received: "&7You received a &fTracker Module&7."
+module-applied: "&aYou successfully applied a Tracker Module to this tool."
+module-exists: "&7A Tracker Module already exists on this item."
